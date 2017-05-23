@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @piza.name %>
+</p>
+
+<p>
+  <strong>Crust:</strong>
+  <%= @piza.crust %>
+</p>
+
+<p>
+  <strong>Sauce:</strong>
+  <%= @piza.sauce %>
+</p>
+
+<p>
+  <strong>Toppings:</strong>
+  <%= @piza.toppings %>
+</p>
+
+<p>
+  <strong>Cost:</strong>
+  <%= @piza.cost %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @piza.image %>
+</p>
+
+<%= link_to 'Edit', edit_piza_path(@piza) %> |
+<%= link_to 'Back', pizas_path %>

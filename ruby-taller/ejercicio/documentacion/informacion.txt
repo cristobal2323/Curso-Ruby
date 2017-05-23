@@ -1,0 +1,13 @@
+irb -> abrir terminal ruby
+puts -> imprimir pantalla
+
+"hello world" -> Variable ruby (Tipo Java script)
+
+Suma de numero en en consola 1 + 3 por ejemplo
+
+
+.to_s – Convierte el valor dado a string
+.to_i – Convierte el valor dado a integer
+.to_f – Convierte el valor dado a float (ej.: decimal)
+
+ 5.to_s + “dollars”

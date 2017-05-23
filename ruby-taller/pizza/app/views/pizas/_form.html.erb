@@ -1,0 +1,47 @@
+<%= form_with(model: piza, local: true) do |form| %>
+  <% if piza.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(piza.errors.count, "error") %> prohibited this piza from being saved:</h2>
+
+      <ul>
+      <% piza.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :piza_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :crust %>
+    <%= form.text_field :crust, id: :piza_crust %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sauce %>
+    <%= form.text_field :sauce, id: :piza_sauce %>
+  </div>
+
+  <div class="field">
+    <%= form.label :toppings %>
+    <%= form.text_area :toppings, id: :piza_toppings %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cost %>
+    <%= form.number_field :cost, id: :piza_cost %>
+  </div>
+
+  <div class="field">
+    <%= form.label :image %>
+    <%= form.text_field :image, id: :piza_image %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
